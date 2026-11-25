@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pym-config
+  labels:
+    app.kubernetes.io/name: pym
+data:
+  ADDR: ":8080"
+  # Set to the externally-reachable base URL (typically your Ingress host).
+  BASE_URL: "https://pym.example.com"

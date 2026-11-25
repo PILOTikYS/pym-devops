@@ -1,0 +1,15 @@
+image:
+  repository: ghcr.io/pilotikys/pym
+  tag: latest
+  pullPolicy: Always
+
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 8080
+
+postgres:
+  user: pymuser
+  password: pympassword
+  db: pymdb
